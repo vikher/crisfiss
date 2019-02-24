@@ -1,0 +1,55 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{course.name}}</h3>
+    </div>
+    <div class="panel-body">
+      <div class="col-xs-10">
+        <div class="row vertical-align">
+          <div class="col-xs-4">
+            <img class="imageClass" [src]="course.photoPath" />
+          </div>
+          <div class="col-xs-8">
+  
+            <div class="row">
+              <div class="col-xs-6">
+                Date of Start
+              </div>
+              <div class="col-xs-6">
+                : {{course.startDate | date}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Is Active
+              </div>
+              <div class="col-xs-6">
+                : {{course.isActive}}
+              </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-xs-6">
+                  Cursos
+                </div>
+                <div class="col-xs-6" >
+                    <ul class="list-group" *ngFor="let courses of career.course">
+                        <li class="list-group-item">{{courses.name}}</li>
+                      </ul>
+                </div>
+              </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer">
+      <a class="btn btn-primary" routerLink="/careers/1">
+        Volver a Cursos
+      </a>
+    </div>
+  </div>
+  <div class="container">
+      <vg-player>
+          <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+              <source src={{course.videoPath}} type="video/mp4">
+          </video>
+      </vg-player>
+  </div>
