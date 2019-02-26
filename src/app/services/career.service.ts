@@ -10,6 +10,7 @@ export class CareerService {
 musicCompositionCourses: Course[] = [
   {
     id: 1,
+    careerId: 1,
     name: 'Formar',
     startDate: new Date('11/20/2019'),
     isActive: true,
@@ -18,15 +19,17 @@ musicCompositionCourses: Course[] = [
   },
   {
     id: 2,
+    careerId: 1,
     name: 'Idioma',
     startDate: new Date('11/20/2019'),
     isActive: true,
     photoPath: 'assets/images/2.png',
-    videoPath: 'assets/images/sample2.mp4'
+    videoPath: 'assets/images/sample.mp4'
 
   },
   {
     id: 3,
+    careerId: 1,
     name: 'Tecnicas instrumentales',
     startDate: new Date('12/20/2019'),
     isActive: true,
@@ -35,16 +38,154 @@ musicCompositionCourses: Course[] = [
   },
   {
     id: 4,
+    careerId: 1,
     name: 'Escritura y estetica.',
     startDate: new Date('1/20/2019'),
     isActive: true,
     photoPath: 'assets/images/4.png',
     videoPath: 'assets/images/sample2.mp4'
-  }
+  },
+  {
+  id: 5,
+  careerId: 2,
+  name: 'Número de líneas',
+  startDate: new Date('11/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 6,
+  careerId: 2,
+  name: 'Longitud de la línea',
+  startDate: new Date('11/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 7,
+  careerId: 2,
+  name: 'Esquema de rima',
+  startDate: new Date('12/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 8,
+  careerId: 2,
+  name: 'Tipos de rima',
+  startDate: new Date('1/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 9,
+  careerId: 2,
+  name: 'Lenguaje corporal',
+  startDate: new Date('1/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 10,
+  careerId: 3,
+  name: 'Teclados',
+  startDate: new Date('11/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 11,
+  careerId: 3,
+  name: 'Instrumentos de cuerda',
+  startDate: new Date('11/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 12,
+  careerId: 3,
+  name: 'Vientos',
+  startDate: new Date('12/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 13,
+  careerId: 3,
+  name: 'Percusiones y electrónica',
+  startDate: new Date('1/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 14,
+  careerId: 4,
+  name: 'musica',
+  startDate: new Date('11/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 15,
+  careerId: 4,
+  name: 'danza',
+  startDate: new Date('11/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 16,
+  careerId: 4,
+  name: 'literatura',
+  startDate: new Date('12/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 17,
+  careerId: 4,
+  name: 'teatro',
+  startDate: new Date('1/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 18,
+  careerId: 5,
+  name: 'psicoacusticas',
+  startDate: new Date('11/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 19,
+  careerId: 5,
+  name: 'preproduccion',
+  startDate: new Date('11/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 20,
+  careerId: 5,
+  name: 'produccion',
+  startDate: new Date('12/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+},
+{
+  id: 21,
+  careerId: 5,
+  name: 'postproduccion',
+  startDate: new Date('1/20/2019'),
+  isActive: true,
+  photoPath: 'assets/images/mary.png'
+}
 ];
 songwritingCourses: Course[] = [
   {
     id: 5,
+    careerId: 2,
     name: 'Número de líneas',
     startDate: new Date('11/20/2019'),
     isActive: true,
@@ -52,6 +193,7 @@ songwritingCourses: Course[] = [
   },
   {
     id: 6,
+    careerId: 2,
     name: 'Longitud de la línea',
     startDate: new Date('11/20/2019'),
     isActive: true,
@@ -59,6 +201,7 @@ songwritingCourses: Course[] = [
   },
   {
     id: 7,
+    careerId: 2,
     name: 'Esquema de rima',
     startDate: new Date('12/20/2019'),
     isActive: true,
@@ -66,6 +209,7 @@ songwritingCourses: Course[] = [
   },
   {
     id: 8,
+    careerId: 2,
     name: 'Tipos de rima',
     startDate: new Date('1/20/2019'),
     isActive: true,
@@ -73,6 +217,7 @@ songwritingCourses: Course[] = [
   },
   {
     id: 9,
+    careerId: 2,
     name: 'Lenguaje corporal',
     startDate: new Date('1/20/2019'),
     isActive: true,
@@ -223,5 +368,10 @@ InterdisciplineCourses: Course[] = [
 
   getCourse(id: number): Course {
     return this.musicCompositionCourses.find(e => e.id === id);
+  } 
+  
+  getCoursesByCareerId(careerId: number): Course[] {
+    return this.musicCompositionCourses.filter(
+      e => e.careerId === careerId);
   } 
 }

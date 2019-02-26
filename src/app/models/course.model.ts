@@ -5,6 +5,7 @@ import {Student} from "./student.model";
 
 export class Course{
     id: number;
+    careerId?: number
     name: string;
     teacher?: Teacher;
     syllabus?: Syllabus;

@@ -31,9 +31,9 @@
                   Cursos
                 </div>
                 <div class="col-xs-6" >
-                    <ul class="list-group" *ngFor="let courses of career.course">
-                        <li class="list-group-item" class="pointerCursor" (click)="onClick(courses.id)" >{{courses.name}}</li>
-                      </ul>
+                      <ul class="list-group" *ngFor="let course of courses">
+                          <li class="list-group-item" class="pointerCursor" (click)="onClick(course.id)" >{{course.name}}</li>
+                        </ul>
                 </div>
               </div>
           </div>
@@ -44,5 +44,8 @@
       <a class="btn btn-primary" routerLink="/careersList">
         Volver a Carreras
       </a>
+      <button class="btn btn-primary pull-right" (click)="getNextCareer()">
+          Ver Siguiente Carrera
+        </button>
     </div>
   </div>

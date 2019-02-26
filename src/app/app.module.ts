@@ -19,6 +19,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule, FirestoreSettingsToken } from '@angular/fire/firestore';
 import { PaypalComponent } from './components/paypal/paypal.component';
 import { NgxPayPalModule } from 'ngx-paypal';
+import { ChildComponent } from './components/course-details/child.component'
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { NgxPayPalModule } from 'ngx-paypal';
     HomeComponent,
     CourseDetailsComponent,
     PaypalComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
